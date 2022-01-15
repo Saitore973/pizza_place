@@ -22,4 +22,33 @@ nav a{
 }
 
 
+.d-block  {
+  width:100%;
+  height:750px;
+}
+
+h5{
+    padding-bottom: 150px;
+    color: rgb(20, 14, 3);
+    font-size: 80px;
+    font-weight: bolder
+    ;
+}
+
+button{
+    padding:20px 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    border:none;
+    background-color:  rgb(182, 131, 45);
+    font-weight: bold
+}
+
+.jumbotron{
+    background-image: url(../images/pizza3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px;
+}
+
 
