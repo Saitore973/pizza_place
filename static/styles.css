@@ -57,4 +57,9 @@ button{
     border:none;
     padding:30px
 }
+.custom-select{
+    padding: 8px 50%;
+    display:block;
+    margin: 40 auto;
+}
 
