@@ -38,12 +38,14 @@ h5{
 }
 
 button{
+    display: block;
     padding:20px 50px;
-    margin-bottom: 50px;
+    margin: 30px auto;
     border-radius: 25px;
     border:none;
     background-color:  rgb(236, 167, 46);
-    font-weight: bold
+    font-weight: bold;
+    text-align: center;
 }
 
 
