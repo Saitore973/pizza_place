@@ -227,7 +227,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="validatedInputGroupSelect">Quantity</label>
                         </div>
-                        <select class="custom-select" id="validatedInputGroupSelect" required>
+                        <select class="custom-select" id="quantity"  required>
                             <option value="">Choose...</option>
                             <option value="1">5</option>
                             <option value="2">4</option>
@@ -242,7 +242,7 @@
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="validatedInputGroupSelect">Size</label>
                         </div>
-                        <select class="custom-select" id="validatedInputGroupSelect" required>
+                        <select class="custom-select" id="select" required>
                             <option value="">Choose...</option>
                             <option value="1">Large</option>
                             <option value="2">Medium</option>
@@ -258,6 +258,23 @@
                 </div>
             </form>
 
+    </section>
+    <section id="pricing">
+      <div class="results">
+        <div class="tick"><i class="fas fa-check-circle sucess"></i></div>
+        <div class="result-cont">
+          <div class="card-head">
+            <p id="priceHead">Your custom pizza</p>
+          </div>
+          <div class="result-image">
+            <img class="re-img"src="./static/images/logo.png" alt="">
+          </div>
+          <div class="result-price">
+            <h5>Price: Ksh. <span id="price" class="price"></span></h5>
+          </div>
+        </div>
+
+      </div>
     </section>
 
 
