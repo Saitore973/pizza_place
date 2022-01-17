@@ -124,3 +124,4 @@ del.addEventListener("click", (e) => {
   e.preventDefault();
   deliveryCharge();
 });
+
