@@ -117,12 +117,12 @@ transition: all 4s ease;
     border-radius: 10px;
 }
 
-ul {
+ .quick ul {
     list-style: none;
 
 }
 
-ul li {
+ul li  {
     color: rgb(182, 131, 45);
     font-weight: lighter;
     list-style: none;
