@@ -158,26 +158,21 @@
                                     <h3>Preffered Crust</h3>
                                 </legend>
                                 <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                            value="option1" id="stuff" checked>
-                                        <label class="form-check-label" for="gridRadios1" >
-                                            Stuffed Crust
-                                        </label>
+                                    <div class="stuffed">
+                                        <input type="radio" id="stuff" name="crust">
+                                        <label for="stuff">Stuffed</label>
+
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="option2" id="thin">
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Thin Crust
-                                        </label>
+                                    <div class="crispy">
+                                        <input type="radio" id="crispy" name="crust">
+                                        <label class="" for="crispy">Crispy</label>
+
+
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="option2" id="crack">
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Cracker Crust
-                                        </label>
+                                    <div class="gluten-free">
+                                        <input type="radio" id="glutten" name="crust">
+                                        <label for="glutten">Gluten-free</label>
+
                                     </div>
                                 </div>
                             </fieldset>
@@ -193,26 +188,26 @@
                                     <h3>Preffered Toppings</h3>
                                 </legend>
                                 <div class="col-sm-10">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                            value="option1" id="perp" checked required>
-                                        <label class="form-check-label" for="gridRadios1">
-                                            Perperoni
-                                        </label>
+                                    <div class="Mayonaise">
+                                        <input type="radio" id="mayo" name="tops" >
+                                        <label for="mayo">Mayonaise</label>
+                                        <div class="mayo">
+                                            <img class="mayo-image" src="./static/images/cheese.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="option2" id="mayo" required>
-                                        <label class="form-check-label" for="gridRadios2">
-                                            Mayonaise
-                                        </label>
+                                    <div class="veg">
+                                        <input type="radio" id="vegetable" name="tops">
+                                        <label for="vegetable">Vegan</label>
+                                        <div class="vegan">
+                                            <img class="vegan-image" src="./static/images/vegan.jpg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                            value="option2" id="vegan" required>
-                                        <label class="form-check-label" for="gridRadios2">
-                                            vegeterian
-                                        </label>
+                                    <div class="Beef">
+                                        <input type="radio" id="biff" name="tops">
+                                        <label for="beef">Perperoni</label>
+                                        <div class="beef-may">
+                                            <img class="cheese-image" src="./static/images/Beef mayo.jpg" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </fieldset>
@@ -221,60 +216,48 @@
 
                 </div>
             </div>
-            <form action="" class="fom">
-                <div class="mb-3">
-                    <div class="input-group is-invalid">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="validatedInputGroupSelect">Quantity</label>
-                        </div>
-                        <select class="custom-select" id="quantity"  required>
-                            <option value="">Choose...</option>
-                            <option value="1">5</option>
-                            <option value="2">4</option>
-                            <option value="3">3</option>
-                            <option value="4">2</option>
-                            <option value="5">1</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="input-group is-invalid">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="validatedInputGroupSelect">Size</label>
-                        </div>
-                        <select class="custom-select" id="select" required>
-                            <option value="">Choose...</option>
-                            <option value="1">Large</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Small</option>
-                        </select>
-                    </div>
 
+            <div class="quantity">
+                <form action="">
+                    <label class="fm-content" for="quantity">Quantity: </label>
+                    <input class="fm-quantity" type="number" id="quanity">
+                </form>
+            </div>
+            <div class="size-select">
+                <form action="">
+                    <label class="fm-content" for="quantity">Size:</label>
+                    <select class="fm-size" name="" id="select">
+                        <option selected disabled> Choose your size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="Medium">Large</option>
+                    </select>
+                </form>
+            </div>
+            <div class="form-group row">
+                <div class="checkout">
+                    <button id="check">Place Order</button>
                 </div>
-                <div class="form-group row">
-                    <div class="col-sm-10">
-                        <button id="orderButton">Place Order</button>
-                    </div>
-                </div>
-            </form>
+            </div>
+        </div>
 
     </section>
     <section id="pricing">
-      <div class="results">
-        <div class="tick"><i class="fas fa-check-circle sucess"></i></div>
-        <div class="result-cont">
-          <div class="card-head">
-            <p id="priceHead">Your custom pizza</p>
-          </div>
-          <div class="result-image">
-            <img class="re-img"src="./static/images/logo.png" alt="">
-          </div>
-          <div class="result-price">
-            <h5>Price: Ksh. <span id="price" class="price"></span></h5>
-          </div>
-        </div>
+        <div class="results">
+            <div class="tick"><i class="fas fa-check-circle sucess"></i></div>
+            <div class="result-cont">
+                <div class="card-head">
+                    <p id="priceHead">Your custom pizza</p>
+                </div>
+                <div class="result-image">
+                    <img class="re-img" src="images/pizza3.jpg" alt="">
+                </div>
+                <div class="result-price">
+                    <h5>Price: Ksh. <span id="price" class="price"></span></h5>
+                </div>
+            </div>
 
-      </div>
+        </div>
     </section>
 
 
@@ -283,7 +266,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-    <script src="static/index.js" ></script>
+    <script src="static/index.js"></script>
 </body>
 
 </html>
