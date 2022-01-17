@@ -1,3 +1,10 @@
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
 h1{
     color: rgb(182, 131, 45);
     text-align: center;
@@ -43,7 +50,7 @@ button{
     margin: 30px auto;
     border-radius: 25px;
     border:none;
-    background-color:  rgb(236, 167, 46);
+    background-color:  rgb(182, 131, 45);
     font-weight: bold;
     text-align: center;
 }
@@ -77,6 +84,8 @@ button{
 .delivery{
     text-align:center;
 }
+
+
 #pricing{
 text-align: center;
 display: flex;
