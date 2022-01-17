@@ -59,10 +59,14 @@ button{
     border:none;
     padding:30px
 }
-.custom-select{
-    padding: 8px 50%;
-    display:block;
-    margin: 40 auto;
+.fom{
+    background-color:aquamarine;;
+    padding:10px 19%;
+}
+.fm-size{
+    background-color:aquamarine;;
+    padding:10px 23.2%;
+    margin-left: 34px ;
 }
 #pricing{
 text-align: center;
