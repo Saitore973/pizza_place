@@ -18,8 +18,8 @@ This is a project that shows a pizza resturant website. Besides it shows the ava
 ## Technologies Used
 * HTML
 * CSS
-*javascript
-*jquery
+* Jquery
+* Javascript
 * Bootstrap
 
 
