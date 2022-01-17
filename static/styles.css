@@ -74,6 +74,9 @@ button{
     padding-right: 280px;
     
 }
+.delivery{
+    text-align:center;
+}
 #pricing{
 text-align: center;
 display: flex;

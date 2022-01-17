@@ -106,3 +106,21 @@ check.addEventListener("click", () => {
   pricing.style.display = "flex";
   calculatePrice();
 });
+
+function deliveryCharge() {
+  let place = document.getElementById("delivery").value;
+  let deliveryPrice = 300;
+  if (place === "") {
+    alert("Please enter your location");
+    // break
+  } else {
+    alert(
+      `Your Pizza will be delivered to ${place}, and delivery charge is ksh. ${deliveryPrice}`
+    );
+  }
+}
+let del = document.querySelector(".custom");
+del.addEventListener("click", (e) => {
+  e.preventDefault();
+  deliveryCharge();
+});
